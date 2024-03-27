@@ -21,7 +21,7 @@ public class TodoEntity {
     @Id // 기본 키 지정
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid")
-    private String id; 
+    private String id;
     private String userId; // 이메일 
     private String title; // 할 일 이름
     private boolean done; // 완료 여부 

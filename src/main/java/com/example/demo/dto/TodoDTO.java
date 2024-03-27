@@ -12,14 +12,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class TodoDTO {
-    private String id; 
-    private String title; 
-    private boolean done; 
+    private String id;
+    private String title;
+    private boolean done;
 
     // 사용자에게 갈 정보 
     public TodoDTO(final TodoEntity entity) {
-        this.id = entity.getId(); 
-        this.title = entity.getTitle(); 
+        this.id = entity.getId();
+        this.title = entity.getTitle();
         this.done = entity.isDone();
     }
 
